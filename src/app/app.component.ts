@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'project1';
+  showAddTask = false;
+
+  onAddTask() {
+    this.showAddTask = true;
+  }
+
+  cancelAddTask() {
+    this.showAddTask = false;
+  }
 }
